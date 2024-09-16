@@ -32,7 +32,7 @@
 #' #geocode data frame by BBL
 #' df_gc <- GBAT.process_BBL(in_df=df, bbl_col_name="BBL", 
 #'     source_cols=source_cols, geocode_fields=geocode_fields, 
-#'     return_type="all", GBAT_name="20C")
+#'     return_type="all", GBAT_name="24B")
 
 
 GBAT.process_BBL <- function(in_df, bbl_col_name, source_cols, geocode_fields, return_type = "all", GBAT_name) { 

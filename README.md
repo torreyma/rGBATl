@@ -10,8 +10,8 @@ This package provides tools to interface with NYC's powerful [Geosupport](https:
 3. If you got no errors, load and test the library, in R:
     * Load the library: ```library(rGBATl)```
         * Unfortunately there's no test for rGBAT24B to already have been installed. The only way to find out if everything is working is to run a test geocoding.
-    * Look at the help for the package: ```help(package=rGBATl)
-    * See the help for a specific function, something like ```?GBAT.process_freeform_addresses.R```
+    * Look at the help for the package: ```help(package=rGBATl)```
+    * See the help for a specific function, something like ```?GBAT.process_freeform_addresses```
     * In the help for the function will be some example code you can run. Run that code in R and see if it works correctly. This is a good test to run before you try geocoding your own addresses.
 
 

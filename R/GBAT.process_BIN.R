@@ -36,7 +36,7 @@
 #' #geocode data frame by BIN
 #' df_gc <- GBAT.process_BIN(in_df=df, bin_col_name="BIN", 
 #'     source_cols=source_cols, geocode_fields=geocode_fields, 
-#'     return_type="all", GBAT_name="20C")
+#'     return_type="all", GBAT_name="24B")
 
 
 GBAT.process_BIN <- function(in_df, bin_col_name, source_cols, geocode_fields, return_type = "all", GBAT_name) { 

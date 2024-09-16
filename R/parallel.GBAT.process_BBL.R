@@ -35,12 +35,12 @@
 #' #with five cores
 #' system.time({ df_gc1 <- parallel.GBAT.process_BBL(in_clus=5, in_df=df, 
 #'     bbl_col_name='BBL', source_cols=source_cols, geocode_fields=geocode_fields, 
-#'     return_type="all", GBAT_name="20C")})
+#'     return_type="all", GBAT_name="24B")})
 #' 
 #' #with one core
 #' system.time({ df_gc2 <- GBAT.process_BBL(in_df=df, bbl_col_name='BBL', 
 #'     source_cols=source_cols, geocode_fields=geocode_fields,
-#'     return_type="all", GBAT_name="20C")})
+#'     return_type="all", GBAT_name="24B")})
 
 
 parallel.GBAT.process_BBL <- function(in_clus,in_df,bbl_col_name,source_cols,geocode_fields,return_type = "all",GBAT_name){

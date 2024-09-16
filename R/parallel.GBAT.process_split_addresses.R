@@ -42,12 +42,12 @@
 #' #with five cores
 #' system.time({ df_gc1 <- parallel.GBAT.process_split_addresses(5, df, "H_NUM", 
 #'     "ST_NAME",'BORO_CODE', source_cols, geocode_fields, "boro_code", 
-#'     "all", "17D")})
+#'     "all", "24B")})
 #'
 #' #with one core
 #' system.time({ df_gc2 <- GBAT.process_split_addresses(df, "H_NUM", "ST_NAME", 
 #'     'BORO_CODE', source_cols, geocode_fields, "boro_code", 
-#'     "all", "17D")})
+#'     "all", "24B")})
 
 
 parallel.GBAT.process_split_addresses <- function(in_clus,in_df,hse_num_col_name,street_col_name,unit_col_name = NULL,third_col_name,source_cols,geocode_fields,third_col_type,return_type = "all",GBAT_name){

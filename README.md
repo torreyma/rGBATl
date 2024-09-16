@@ -1,4 +1,6 @@
-# rGBAT-l
+# rGBATl
+("arr-jee-battle" --- it's a lowercase L, not 1 or I.)
+
 This package provides tools to interface with NYC's powerful [Geosupport](https://www.nyc.gov/site/planning/data-maps/open-data/dwn-gde-home.page) geocoding software from within the R programming language on Linux. It requires the torreyma/rGBAT24B, which in turn requires you to download Geosupport from NYC DCP's website. See: https://github.com/torreyma/rGBAT24B for instructions.
 
 

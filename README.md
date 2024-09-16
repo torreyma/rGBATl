@@ -5,10 +5,10 @@ This package provides tools to interface with NYC's powerful [Geosupport](https:
 
 
 ## Installation
-1. Install the torreyma/rGBAT24B package from github which rGBAT-l needs:
+1. Install the torreyma/rGBAT24B package from github which rGBATl needs:
     * rGBAT24B requires you to manually download DCP's Geosupport (version 24B) from their website, and unzip it in your home directory before installing the rGBAT24B pacakge.
     * See instructions: https://github.com/torreyma/rGBAT24B
-2. In R, make sure you have the ```devtools``` package installed. Then run ```devtools::install_github("torreyma/rGBAT-l")```
+2. In R, make sure you have the ```devtools``` package installed. Then run ```devtools::install_github("torreyma/rGBATl")```
 3. If you got no errors, load and test the library, in R:
     * Load the library: ```library(rGBATl)```
         * Unfortunately there's no test for rGBAT24B to already have been installed. The only way to find out if everything is working is to run a test geocoding.

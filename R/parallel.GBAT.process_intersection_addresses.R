@@ -55,7 +55,7 @@
 parallel.GBAT.process_intersection_addresses <- function(in_clus,in_df,street1_col_name,street2_col_name,boro_code1_col_name,source_cols,geocode_fields,boro_code2_col_name=NULL,com_dir_col_name=NULL,return_type = "all",GBAT_name){
 
 	###check where this package is loaded... used for testing purposes when loaded in local libpath###
-	my_loc <- gsub("/rGBAT","",find.package("rGBAT"))
+	my_loc <- gsub("/rGBAT-l","",find.package("rGBAT-l"))
 
 	###algorithm to limit clusters###
 	in_clus <- max(min(parallel::detectCores(),20,in_clus,as.integer(nrow(in_df)/1000)),1)

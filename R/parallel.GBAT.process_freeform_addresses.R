@@ -55,7 +55,7 @@ parallel.GBAT.process_freeform_addresses <- function(in_clus,in_df,addr_col_name
 	data.table::setDTthreads(1) 
 
 	###check where this package is loaded... used for testing purposes when loaded in local libpath###
-	my_loc <- gsub("/rGBAT","",find.package("rGBAT"))
+	my_loc <- gsub("/rGBAT-l","",find.package("rGBAT-l"))
 
 	###algorithm to limit clusters###
 	in_clus <- max(min(parallel::detectCores(),20,in_clus,as.integer(nrow(in_df)/1000)),1)

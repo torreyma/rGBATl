@@ -3,7 +3,7 @@
 GBAT.load_all <- function(){
 
 	###check where this package is loaded... used for testing purposes when loaded in local libpath###
-	my_loc <- gsub("/rGBAT","",find.package("rGBAT"))
+	my_loc <- gsub("/rGBAT-l","",find.package("rGBAT-l"))
 	
 	#cat(my_loc)
 	

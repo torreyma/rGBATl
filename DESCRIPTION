@@ -1,4 +1,4 @@
-Package: rGBAT-l
+Package: rGBATl
 Title: GeoSupport for R
 Version: 0.0.0.9000
 Authors@R: person("GM", "Culp", email = "gculp@health.nyc.gov", role = c("aut", "cre"))

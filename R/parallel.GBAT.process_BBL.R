@@ -49,7 +49,7 @@ parallel.GBAT.process_BBL <- function(in_clus,in_df,bbl_col_name,source_cols,geo
 	data.table::setDTthreads(1) 
 
 	###check where this package is loaded... used for testing purposes when loaded in local libpath###
-	my_loc <- gsub("/rGBAT-l","",find.package("rGBAT-l"))
+	my_loc <- gsub("/rGBATl","",find.package("rGBATl"))
 
 	###algorithm to limit clusters###
 	in_clus <- max(min(parallel::detectCores(),20,in_clus,as.integer(nrow(in_df)/1000)),1)

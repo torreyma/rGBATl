@@ -61,10 +61,10 @@ geocode_fields <- c('F1E.output.bin','F1E.output.bbl','F1E.longitude',
 #with five cores
 system.time({ df_gc1 <- parallel.GBAT.process_split_addresses(5, df, "H_NUM", 
     "ST_NAME",'BORO_CODE', source_cols, geocode_fields, "boro_code", 
-    "all", "17D")})
+    "all", "24B")})
 
 #with one core
 system.time({ df_gc2 <- GBAT.process_split_addresses(df, "H_NUM", "ST_NAME", 
     'BORO_CODE', source_cols, geocode_fields, "boro_code", 
-    "all", "17D")})
+    "all", "24B")})
 }

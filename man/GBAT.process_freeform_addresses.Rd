@@ -56,10 +56,10 @@ geocode_fields <- c('F1E.output.bin','F1E.output.bbl','F1E.longitude',
 #geocode data frame by zip code
 df_gc1 <- GBAT.process_freeform_addresses(in_df=df, addr_col_name="ADDR", 
     third_col_name='ZIP_CODE', source_cols=source_cols, geocode_fields=geocode_fields, 
-    third_col_type="zip_code", return_type="all", GBAT_name="17D")
+    third_col_type="zip_code", return_type="all", GBAT_name="24B")
 
 #geocode data frame by borough code
 df_gc2 <- GBAT.process_freeform_addresses(in_df=df, addr_col_name="ADDR", 
     third_col_name='BORO_CODE', source_cols=source_cols, geocode_fields=geocode_fields, 
-    third_col_type="boro_code", return_type="all", GBAT_name="17D")
+    third_col_type="boro_code", return_type="all", GBAT_name="24B")
 }

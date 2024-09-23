@@ -48,5 +48,5 @@ geocode_fields <- c("FBL.bbl", "FBL.RPAD_lucc", "FBL.coord1", "FBL.coord2",
 #geocode data frame by BBL
 df_gc <- GBAT.process_BBL(in_df=df, bbl_col_name="BBL", 
     source_cols=source_cols, geocode_fields=geocode_fields, 
-    return_type="all", GBAT_name="20C")
+    return_type="all", GBAT_name="24B")
 }

@@ -59,11 +59,11 @@ geocode_fields <- c('F1E.output.bin','F1E.output.bbl','F1E.longitude',
 df_gc1 <- GBAT.process_split_addresses(in_df=df, hse_num_col_name="H_NUM", 
     street_col_name="ST_NAME", third_col_name='ZIP_CODE', 
     source_cols=source_cols, geocode_fields=geocode_fields, 
-    third_col_type="zip_code", return_type="all", GBAT_name="20C")
+    third_col_type="zip_code", return_type="all", GBAT_name="24B")
 
 #geocode data frame by borough code
 df_gc2 <- GBAT.process_split_addresses(in_df=df, hse_num_col_name="H_NUM", 
     street_col_name="ST_NAME", third_col_name='BORO_CODE', 
     source_cols=source_cols, geocode_fields=geocode_fields, 
-    third_col_type="boro_code", return_type="all", GBAT_name="20C")
+    third_col_type="boro_code", return_type="all", GBAT_name="24B")
 }

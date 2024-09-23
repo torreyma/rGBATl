@@ -52,5 +52,5 @@ geocode_fields <- c("FBN.bbl", "FBN.bin", "FBN.RPAD_lucc",
 #geocode data frame by BIN
 df_gc <- GBAT.process_BIN(in_df=df, bin_col_name="BIN", 
     source_cols=source_cols, geocode_fields=geocode_fields, 
-    return_type="all", GBAT_name="20C")
+    return_type="all", GBAT_name="24B")
 }

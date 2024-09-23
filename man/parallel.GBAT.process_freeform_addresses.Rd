@@ -59,10 +59,10 @@ geocode_fields <- c('F1E.output.bin','F1E.output.bbl','F1E.longitude',
 system.time({ df_gc1 <- parallel.GBAT.process_freeform_addresses(in_clus=5, in_df=df, 
     addr_col_name="ADDR", third_col_name='BORO_CODE', source_cols=source_cols, 
     geocode_fields=geocode_fields, third_col_type="boro_code", return_type="all",
-    GBAT_name="20C")})
+    GBAT_name="24B")})
 
 #with one core
 system.time({ df_gc2 <- GBAT.process_freeform_addresses(in_df=df, addr_col_name="ADDR", 
     third_col_name='BORO_CODE', source_cols=source_cols, geocode_fields=geocode_fields,
-    third_col_type="boro_code", return_type="all", GBAT_name="20C")})
+    third_col_type="boro_code", return_type="all", GBAT_name="24B")})
 }

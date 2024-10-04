@@ -16,20 +16,22 @@ suppressMessages(lapply(packages, require, character.only = TRUE))
 ################
 
 ###path of zip file###
-zip_path <- "rGBAT-temp_packages.zip" ## This is the file relative to the root of the git repo
+## NOTE: for 24B version, the package files are small enough that I'm not going to keep them zipped (at least for now), so commenting these unzipping lines
+#zip_path <- "rGBAT-temp_packages.zip" ## This is the file relative to the root of the git repo
 
 #tmpdir <- tempdir() ## trying to do this in tempdir is breaking things, 
-	# instead, let't put the files in home:
-	tmpdir <- Sys.getenv("HOME")
+	# instead, let't get the files from the git repo:
+	tmpdir <- getwd() 
+	# NOTE: As a result, make sure you are running this script from the top level of the git repo.
+	# TODO: add test that packages directory exists
 
-
-unzip(zip_path, exdir = tmpdir)
+#unzip(zip_path, exdir = tmpdir)
 
 ###the file path where you unzipped the package source###
-pkg.path <- file.path(tmpdir,"temp_packages")
+pkg.path <- file.path(tmpdir,"packages")
 
 v.y <- list.files(pkg.path)
-v.x <- c("rGBAT","rGBAT20B")
+v.x <- c("rGBAT","rGBAT24B")
 
 ###check that the deisred packages are included in the unzipped file###
 if(any(apply(embed(v.y,length(v.y)-length(v.x)+1),2,identical,v.x))){
@@ -43,7 +45,13 @@ if(any(apply(embed(v.y,length(v.y)-length(v.x)+1),2,identical,v.x))){
 	###if old version of package is installed, remove it###
 	ip <- as.character(installed.packages(this.libPath)[,'Package'])
 
-	pkg.name <- "rGBAT20B"
+	#
+	##
+	### This section installs the rGBAT24B package from packages dir
+	##
+	#
+	
+	pkg.name <- "rGBAT24B"
 	
 	if (pkg.name %in% ip){
 		remove.packages(pkg.name, lib=this.libPath)
@@ -65,11 +73,12 @@ if(any(apply(embed(v.y,length(v.y)-length(v.x)+1),2,identical,v.x))){
 
 	#
 	##
-	###
+	### This section installs the rGBATl package from packages dir
+
 	##
 	#
 	
-	pkg.name <- "rGBAT"
+	pkg.name <- "rGBATl"
 	
 	if (pkg.name %in% ip){
 		remove.packages(pkg.name, lib=this.libPath)

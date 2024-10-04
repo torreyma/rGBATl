@@ -1,0 +1,4 @@
+###binary locations###
+PKG_LIBS = -Wl,-rpath,"$(HOME)/version-24b_24.2/lib" -L"$(HOME)/version-24b_24.2/lib" -lgeo -Wl,--disable-new-dtags
+###header locations####
+PKG_CPPFLAGS=-I"$(HOME)/version-24b_24.2/include/foruser" -I"../src"

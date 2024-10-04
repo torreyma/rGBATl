@@ -1,0 +1,3 @@
+importFrom(Rcpp, evalCpp)
+useDynLib(rGBAT24B)
+import(data.table)

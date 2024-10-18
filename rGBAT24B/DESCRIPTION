@@ -1,0 +1,20 @@
+Package: rGBAT24B
+Version: 24.2
+Title: Supporting Functions for rGBAT package
+Description: Supporting functions for R implementation of the New York City Department of City Planning's
+    (NYC DCP) Geosupport geocoding application.
+Date: 2016-09-20
+Authors@R: person("GM", "Culp", , "gculp@health.nyc.gov", c("aut", "cre"))
+URL: https://github.com/gmculp/rGBAT
+BugReports: https://github.com/gmculp/rGBAT/issues
+Depends:
+    R (>= 3.3.1)
+Imports:
+    Rcpp (>= 0.12.2),
+	data.table
+LinkingTo: Rcpp
+License: MIT
+LazyData: TRUE
+RoxygenNote: 7.2.3
+SystemRequirements: GNU make
+Encoding: UTF-8

@@ -3,12 +3,15 @@ Title: GeoSupport for R
 Version: 0.0.0.9000
 Authors@R: person("GM", "Culp", email = "gculp@health.nyc.gov", role = c("aut", "cre"))
 Description: R implementation of the New York City Department of City Planning's (NYC DCP) Geosupport application to geocode NYC addresses.  
-Depends: R (>= 3.4.2)
+Remotes: github::torreyma/rGBAT24B
+Depends: 
+    R (>= 3.4.2)
 Imports:
     parallel,
     data.table,
-	httr,
-	jsonlite
+    httr,
+    jsonlite,
+    rGBAT24B
 License: MIT
 Encoding: UTF-8
 LazyData: true

@@ -1,14 +1,18 @@
 # rGBATl
 ("arr-jee-battle" --- it's a lowercase L, not 1 or I.)
 
-This package provides tools to interface with NYC's powerful [Geosupport](https://www.nyc.gov/site/planning/data-maps/open-data/dwn-gde-home.page) geocoding software from within the R programming language on Linux. It depends on the torreyma/rGBAT24B, which in turn requires you to download Geosupport from NYC DCP's website. See: https://github.com/torreyma/rGBAT24B for instructions.
+This package provides tools to interface with NYC's powerful [Geosupport](https://www.nyc.gov/site/planning/data-maps/open-data/dwn-gde-home.page) geocoding software from within the R programming language on Linux. It depends on the torreyma/rGBAT24B package, which in turn requires you to manually and unzip download Geosupport from NYC DCP's website outside of R. 
 
 
 ## Installation
-1. Manually download DCP's Geosupport (version 24B) from their website, and unzip it in your home directory before trying to install the rGBATl pacakge.
-    * See instructions: https://github.com/torreyma/rGBAT24B
-    * (rGBAT24B is the package that actually requires Geosupport, but rGBAT24B is a dependency of rGBATl)
+1. Manually download NYC's Geosupport version 24B from Bytes of the Big Apple:
+    * Search for Linux version of Geosupport Desktop Edition, 24B on NYC DCP's BYTES of the BIG APPLE™ Archive page.
+    * Or try this url for direct download: https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/linux_geo24b_24.2.zip
+2. Unzip the downloaded file (linux_geo24b_24.2.zip) in your home directory so you get a ```version-24b_24.2/``` directory with all the Geosupport libraries in it. 
+    * Note: this is stupid, but it HAS to be in your home directory ($HOME/, ~/) and it has to have the name above or it won't work. (See hard installation section if you want to do it differently.)
+    * Probably not a bad idea to run a ```chmod -r 755 version-24b_24.2``` to make all the files executable.
 2. In R, make sure you have the ```devtools``` package installed. Then run ```devtools::install_github("torreyma/rGBATl")```
+    * rGBATl depends on and will try to compile and install torreyma/rGBAT24B. If something goes wrong, your first troubleshooting step should be to try to install rGBAT24B separately from rGBATl. See: https://github.com/torreyma/rGBAT24B. 
 3. If you got no errors, load and test the library, in R:
     * Load the library: ```library(rGBATl)```
     * Look at the help for the package: ```help(package=rGBATl)```
@@ -26,5 +30,7 @@ This package provides tools to interface with NYC's powerful [Geosupport](https:
 * The original package, rGBAT, was written by Gretchen Culp (https://github.com/gmculp), initially exclusively for use on DOHMH's RHEL R server. (rGBATl simply extends its use to generalized Linux for the public.)
 * This package is released under an MIT license (see LICENSE file).
 * Geosupport Desktop Edition™ copyrighted by the New York City Department of City Planning. This product is freely available to the public with no limitations. 
+
+
 
 

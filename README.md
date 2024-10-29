@@ -9,7 +9,7 @@ This package provides tools to interface with NYC's powerful [Geosupport](https:
     * Search for Linux version of Geosupport Desktop Edition, 24B on NYC DCP's BYTES of the BIG APPLE™ Archive page.
     * Or try this url for direct download: https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/linux_geo24b_24.2.zip
 2. Unzip the downloaded file (linux_geo24b_24.2.zip) in your home directory so you get a ```version-24b_24.2/``` directory with all the Geosupport libraries in it. 
-    * Note: this is stupid, but it HAS to be in your home directory ($HOME/, ~/) and it has to have the name above or it won't work. (See hard installation section if you want to do it differently.)
+    * Note: this is stupid, but it HAS to be in your home directory ($HOME/, ~/) and it has to have the name above or it won't work. (See torreyma/rGBAT24B github repo if you want to do it differently.)
     * Probably not a bad idea to run a ```chmod -r 755 version-24b_24.2``` to make all the files executable.
 2. In R, make sure you have the ```devtools``` package installed. Then run ```devtools::install_github("torreyma/rGBATl")```
     * rGBATl depends on and will try to compile and install torreyma/rGBAT24B. If something goes wrong, your first troubleshooting step should be to try to install rGBAT24B separately from rGBATl. See: https://github.com/torreyma/rGBAT24B. 

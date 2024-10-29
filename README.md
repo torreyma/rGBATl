@@ -23,7 +23,7 @@ This package provides tools to interface with NYC's powerful [Geosupport](https:
 ## TODO
 * I deleted the US_CB_PUMA_2000.rda file because it was too big for github. This will break the function(s) that use that rda. I should figure out the best way to fix this.
 * Eventually: modify this package so you can use it with any version of Geosupport.
-* Eventually: this package should run in R on Windows.
+* Eventually: this package should run in R on Windows. For a temporary workaround Windows installation option that may or may not work, see: https://github.com/torreyma/rGBAT-win
 
 
 ## License and credits

@@ -52,7 +52,7 @@
 parallel.GBAT.process_freeform_addresses <- function(in_clus,in_df,addr_col_name,unit_col_name = NULL,third_col_name,source_cols,geocode_fields,third_col_type,return_type = "all",GBAT_name){
 
 	#short term fix
-	data.table::setDTthreads(1) 
+	#data.table::setDTthreads(1) 
 
 	###check where this package is loaded... used for testing purposes when loaded in local libpath###
 	my_loc <- gsub("/rGBATl","",find.package("rGBATl"))

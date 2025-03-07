@@ -8,15 +8,15 @@ This package provides tools to interface with NYC's powerful [Geosupport](https:
 1. Manually download NYC's Geosupport version 24B from Bytes of the Big Apple:
     * Search for Linux version of Geosupport Desktop Edition, 24B on NYC DCP's BYTES of the BIG APPLE™ Archive page.
     * Or try this url for direct download: https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/linux_geo24b_24.2.zip
-2. Unzip the downloaded file (linux_geo24b_24.2.zip) in your home directory so you get a ```version-24b_24.2/``` directory with all the Geosupport libraries in it. 
+2. Unzip the downloaded file (linux_geo24b_24.2.zip) in your home directory so you get a `version-24b_24.2/` directory with all the Geosupport libraries in it. 
     * Note: this is stupid, but it HAS to be in your home directory ($HOME/, ~/) and it has to have the name above or it won't work. (See torreyma/rGBAT24B github repo if you want to do it differently.)
-    * Probably not a bad idea to run a ```chmod -r 755 version-24b_24.2``` to make all the files executable.
-2. In R, make sure you have the ```devtools``` package installed. Then run ```devtools::install_github("torreyma/rGBATl")```
+    * Probably not a bad idea to run a `chmod -r 755 version-24b_24.2` to make all the files executable.
+2. In R, make sure you have the `devtools` package installed. Then run `devtools::install_github("torreyma/rGBATl")`
     * rGBATl depends on and will try to compile and install torreyma/rGBAT24B. If something goes wrong, your first troubleshooting step should be to try to install rGBAT24B separately from rGBATl. See: https://github.com/torreyma/rGBAT24B. 
 3. If you got no errors, load and test the library, in R:
-    * Load the library: ```library(rGBATl)```
-    * Look at the help for the package: ```help(package=rGBATl)```
-    * See the help for a specific function, something like ```?GBAT.process_freeform_addresses```
+    * Load the library: `library(rGBATl)`
+    * Look at the help for the package: `help(package=rGBATl)`
+    * See the help for a specific function, something like `?GBAT.process_freeform_addresses`
     * In the help for the function will be some example code you can run. Run that code in R and see if it works correctly. This is a good test to run before you try geocoding your own addresses.
 
 
